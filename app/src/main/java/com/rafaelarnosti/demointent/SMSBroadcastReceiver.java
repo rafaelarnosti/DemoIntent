@@ -42,7 +42,7 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
                             .putExtra("mensagem", mensagem);
                     context.sendBroadcast(i2);
 
-                    //showNotification(context, numeroTelefone, mensagem);
+                    showNotification(context, numeroTelefone, mensagem);
                 }
             }
         } catch (Exception e) {
