@@ -13,15 +13,15 @@
     <EditText
     style="@style/inputs"
         android:id="@+id/etInformeUserName"
-        android:text="@string/txtInformeUserName"/>
+        android:hint="@string/txtInformeUserName"/>
     <EditText
         style="@style/inputs"
         android:id="@+id/etInformeName"
-        android:text="@string/txtInformeName"/>
+        android:hint="@string/txtInformeName"/>
     <EditText
-        style="@style/inputs"
+        style="@style/inputs_senha"
         android:id="@+id/etInformeSenha"
-        android:text="@string/txtInformeSenha"/>
+        android:hint="@string/txtInformeSenha"/>
     <Button
         android:id="@+id/btCriar"
         android:layout_width="match_parent"

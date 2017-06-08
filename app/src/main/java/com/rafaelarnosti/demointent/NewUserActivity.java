@@ -30,6 +30,8 @@ public class NewUserActivity extends AppCompatActivity {
     @OnClick(R.id.btCriar)
     public void criar(){
         Intent i = new Intent();
-
+        i.putExtra("UserName", etInformeUserName.getText().toString());
+        setResult(RESULT_OK,i);
+        finish();
     }
 }

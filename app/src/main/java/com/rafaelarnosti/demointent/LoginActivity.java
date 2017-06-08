@@ -13,6 +13,8 @@ package com.rafaelarnosti.demointent;
 
 public class LoginActivity extends AppCompatActivity  {
 
+    public static final int REQUEST_NOVO_USUARIO = 1;
+
     @BindView(R.id.etLogin)
     EditText etLogin;
     @BindView(R.id.etSenha)
@@ -28,7 +30,16 @@ public class LoginActivity extends AppCompatActivity  {
     @OnClick(R.id.tvUsuario)
     public void novoUsuarioClick(){
         Intent novoUsuario = new Intent(this, NewUserActivity.class);
-        startActivityForResult(novoUsuario,1);
+        startActivityForResult(novoUsuario,REQUEST_NOVO_USUARIO);
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode){
+            case REQUEST_NOVO_USUARIO:
+                etLogin.setText(data.getStringExtra("UserName"));
+                break;
+        }
+    }
 }
