@@ -3,4 +3,8 @@
     <string name="hintLogin">Informe o username</string>
     <string name="hintSenha">Informe sua senha</string>
     <string name="txtUsuario">Sou novo usuario</string>
+    <string name="txtInformeUserName">Informe seu Username</string>
+    <string name="txtInformeName">Informe seu Nome</string>
+    <string name="txtInformeSenha">Informe sua Senha</string>
+    <string name="txtCriar">Criar</string>
 </resources>
