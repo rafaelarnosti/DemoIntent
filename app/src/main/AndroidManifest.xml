@@ -16,6 +16,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".NewUserActivity"></activity>
+
+
+        <receiver android:name=".SMSBroadcastReceiver">
+            <intent-filter android:priority="500">
+                <action
+                    android:name="android.provider.Telephony.SMS_RECEIVED"></action>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
